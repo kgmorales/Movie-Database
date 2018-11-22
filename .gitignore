@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b0680962bd9f1f82de0f4fb5bdda3397b6b33dad
 # Logs
 logs
 *.log
@@ -60,6 +63,7 @@ typings/
 
 # next.js build output
 .next
+<<<<<<< HEAD
 =======
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
@@ -101,3 +105,5 @@ testem.log
 .DS_Store
 Thumbs.db
 >>>>>>> first commit
+=======
+>>>>>>> b0680962bd9f1f82de0f4fb5bdda3397b6b33dad
