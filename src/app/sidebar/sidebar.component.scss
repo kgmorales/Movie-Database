@@ -1,0 +1,112 @@
+aside {
+  position: fixed;
+  width: 80px;
+  text-align: center;
+  top:140px;
+  height: 432px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid silver;
+  background: #333;
+}
+
+aside h1 {
+  color: white;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  background: #0fa0eb;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside ul li {
+  padding: 20px 0 10px 0;
+  cursor: pointer;
+}
+
+aside ul li:hover {
+  border-left: 3px solid #0fa0eb;
+  background: ghostwhite;
+}
+
+aside ul li:hover i {
+  color: #0fa0eb !important;
+}
+
+aside ul li .nav-item {
+  display: inline-block;
+  width: 30px;
+  overflow: hidden;
+  height: 30px;
+  transition: width 0.3s ease-in-out;
+  white-space: nowrap;
+  color: #858e99;
+}
+
+aside ul li .nav-item i {
+  float: left;
+  position: relative;
+  top: -3px;
+  color: #858e99;
+  font-size: 30px;
+}
+
+aside ul li .nav-item span {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+aside ul .active {
+  border-left: 3px solid #0fa0eb;
+  background: ghostwhite;
+}
+
+aside ul .active i {
+  color: #0fa0eb !important;
+}
+
+aside ul:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.global-wrapper aside:hover {
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+  }
+  .global-wrapper aside:hover .nav-item {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  .global-wrapper aside:hover .nav-item i {
+    float: left;
+  }
+  .global-wrapper aside:hover .nav-item span {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  .global-wrapper aside:hover ~ #main {
+    width: calc(100% - 302px);
+    transition: all 0.3s ease-in-out;
+  }
+  .global-wrapper aside:hover ~ #main #blackout-on-hover {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }

@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "grid";
+
+
+body {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background:#000;
+  z-index:99;
+}

@@ -1,0 +1,29 @@
+<div class="movie" id="bright">
+  <div class="movie-info">
+    <div class="movie-bio">
+      <img class="movie-thumbnail" src="{{ posterUrl }}"/>
+      <h1>{{movie.title}}</h1>
+      <ul>
+        <li><i class="material-icons">access_time</i>{{movie.release_date | date }}</li>
+        <li><p class="minutes">{{movie.runtime}}</p></li>
+        <li><p class="type">{{movie.adult}}</p></li>
+        <li><p class="type">{{movie.vote_average}}</p></li>
+      </ul>
+    </div>
+    <div class="movie_desc">
+      <p class="text">
+        {{movie.overview}}
+      </p>
+    </div>
+    <div class="movie_social">
+      <ul>
+        <li><i class="material-icons">share</i></li>
+        <li><i class="material-icons"></i></li>
+        <li><i class="material-icons">chat_bubble</i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="movie-background" [style.backgroundImage]="'url('+ posterUrl +')'"></div>
+</div>
+
+

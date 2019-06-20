@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/grid.scss",
               "src/styles.scss"
             ],
             "scripts": []
